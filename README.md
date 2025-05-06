@@ -6,7 +6,7 @@ This project uses PyTorch and the Gymnasium environment to train an agent with e
 
 ## Training Results
 
-![training_results](../training_results.png?raw=true)
+![training_results](training_results.png?raw=true)
 
 ## Demo
 
@@ -27,4 +27,6 @@ This project uses PyTorch and the Gymnasium environment to train an agent with e
 
 ## Conclusion
 
+This project implimented a Deep Q-Network agent to learn and play Breakouto on the Atari using pixel input. The goal was to evaluate the effctiveness of DQN in a classic reinforcement learning setting and understand the impact of various components like frame stacking, replay buffers, and epsilon-greedy exploration.
 
+Throughout training, the agent showed a clear learning curve—with noticeable improvements around 450 and 750 episodes. While the resulting model likely performs worse than any manual strategy, the main takeaway is how quickly reinforcement learning can develop adaptive behavior with relatively minimal domain knowledge.
