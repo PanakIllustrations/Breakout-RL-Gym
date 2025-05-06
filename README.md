@@ -69,4 +69,6 @@ This project implimented a Deep Q-Network agent to learn and play Breakouto on t
 
 Throughout training, the agent showed a clear learning curve—with noticeable improvements around 450 and 750 episodes. While the resulting model likely performs worse than any manual strategy, the main takeaway is how quickly reinforcement learning can develop adaptive behavior with relatively minimal domain knowledge.
 
-For future improvments, instead of using a raw extraction of the full game frame, which might blend the ball and paddle pixels together in preprocessing, seperating the frames into an upper and lower region might have allowed the model to learn more strategic gameplay much faster since the relevant information is more explicitly provided. This could potentially be a good middle ground between using raw pixel data and full entity extraction.
+I suspect the sporadic movement is partially caused by the ball and paddle pixels blending together in preprocessing. This would mean that a successful model would have to learn to position the paddle predictively with earlier ball movements, causing slow convergence.
+
+For future improvements, separating the frames into an upper and lower region might have allowed the model to learn more strategic game play faster since the relevant information is more explicitly provided. This could potentially be a good middle ground between using raw pixel data and full entity extraction.
