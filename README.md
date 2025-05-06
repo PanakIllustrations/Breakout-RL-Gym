@@ -1,1 +1,1 @@
-# Pong-RL-Gym
+# Breakout-RL-Gym
